@@ -4,12 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("""
-        <h1>Hey, I am a Django server.</h1>
-        <p>Hello this is python code</p>
-        <hr>
-        <h2>Not a javascript code</h2>
-    """)
+    return render(request,"index.html")
 
 def sucess_page(request):
     print("*" * 10)
